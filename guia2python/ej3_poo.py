@@ -1,23 +1,19 @@
 class Triangulo:
-    def lados(self,lado1:int,lado2:int,lado3:int):
+    def lados(self):
         lista_lados=[]
-        self.lado1=lado1
-        self.lado2=lado2
-        self.lado3=lado3
+        self.lado1=input("Ingrese el primer lado: ")
         lista_lados.append(self.lado1)
+        self.lado2=input("Ingrese el segundo lado: ")
         lista_lados.append(self.lado2)
+        self.lado3=input("Ingrese el tercer lado: ")
         lista_lados.append(self.lado3)
-        for lado in lista_lados:
-            if self.lado1>self.lado2 and self.lado1>self.lado3:
-                print(f"El lado mayor es: {self.lado1} ")
-            
-        if self.lado2>self.lado1 and self.lado2>self.lado3:
-            print(f"El lado mayor es: {self.lado2} ")
-            
-        if self.lado3>self.lado1 and self.lado3>self.lado2:
-            print(f"El lado mayor es: {self.lado3} ")
-        else:
-            print(f"Todos los lados son iguales, miden: {self.lado1}cm")
+        
+        lado_mayor = max(lista_lados)
+        if self.lado1==self.lado2==self.lado3:
+            print(f"Todos los lados valen lo mismo: {lado_mayor}")
+        else:    
+            print(f"El lado mayor es: {lado_mayor} ")
+        
     
     def equilatero(self):
         if (self.lado1 == self.lado2 == self.lado3):
@@ -27,7 +23,7 @@ class Triangulo:
             
   
 triangulo=Triangulo()
-triangulo.lados(2,2,2)
+triangulo.lados()
 triangulo.equilatero()
  
         
