@@ -1,5 +1,5 @@
 class Persona:
-    def personita(self):
+    def __init__(self):
         self.nombre=input("Escriba el nombre: ")
         self.edad=int(input("Escriba la edad: "))
        
@@ -13,13 +13,11 @@ class Empleado(Persona):
         super().__init__()
         self.sueldo=int(input("Ingrese su sueldo: "))
         if self.sueldo>=3000:
-            print(f"{self.nombre} debe pagar impuestos")
+            print("Debe pagar impuestos")
         else:
             print("No tiene que pagar impustos")
     
     
 persona=Persona()
-persona.personita()
 persona.mostrar()
 empleado=Empleado()
-empleado.empleadito()
