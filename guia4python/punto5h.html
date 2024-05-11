@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    <div id="weather-data">
+        <h1>Weather in {{ weather_data['name'] }}</h1>
+        <p>Temperature: {{ weather_data['main']['temp'] }} °C</p>
+        <p>Description: {{ weather_data['weather'][0]['description'] }}</p>
+        <p>Humidity: {{ weather_data['main']['humidity'] }}%</p>
+        <p>Wind Speed: {{ weather_data['wind']['speed'] }} m/s</p>
+        <p>Pressure: {{ weather_data['main']['pressure'] }} hPa</p>
+        <img src="http://openweathermap.org/img/w/{{ weather_data['weather'][0]['icon'] }}.png" alt="Weather Icon">
+    </div>
+</body>
+</html>
