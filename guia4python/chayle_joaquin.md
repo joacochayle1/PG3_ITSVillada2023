@@ -33,6 +33,5 @@ En conclusión, la API [OpenWeatherMap] ofrece [informacion sobre los datos mete
 ## Bibliografía
 
 - Documentación oficial de [OpenWeatherMap]: [[enlace a la documentación oficial](https://home.openweathermap.org/api_keys)]
-- Tutorial de [nombre del tutorial]: [enlace al tutorial utilizado]
-- Artículo de [nombre del artículo]: [enlace al artículo utilizado]
+
 
